@@ -96,12 +96,12 @@
       left: box.left + window.pageXOffset - de.clientLeft
     };
   };
-
   Pin.prototype.getParentOffset = function() {
     return {
       left: this.el.offsetLeft
-    };
+    }
   };
+
 
   Pin.prototype.bind = function() {
     this.reloadBind = this.reload.bind(this);
@@ -207,7 +207,6 @@
       el.removeAttribute('style');
       return;
     }
-
     for (var property in properties) {
       el.style[property] = properties[property];
     }
@@ -217,13 +216,9 @@
     return (property) ? window.getComputedStyle(el)[property] : window.getComputedStyle(el);
   };
 
-  Pin.toPx = function(n) {
-    return n + 'px';
-  };
+  Pin.toPx = n => n + 'px';
 
-  Pin.windowIsSmaller = function(el) {
-    return window.innerHeight < el.offsetHeight;
-  };
+  Pin.windowIsSmaller = el => window.innerHeight < el.offsetHeight;
 
   Pin.init = function() {
     var pinElements = Array.prototype.slice.call(document.querySelectorAll('[data-pin]'));
@@ -240,6 +235,7 @@
   if (typeof Document !== 'undefined') {
     document.addEventListener('DOMContentLoaded', Pin.init);
   }
+
   if (typeof module !== 'undefined' && typeof exports === 'object') {
     module.exports = Pin;
   } else if (typeof define === 'function' && (define.amd || define.cmd)) {
@@ -249,4 +245,5 @@
   } else {
     this.Pin = Pin;
   }
+  module.exports = this.Pin;
 }(window, document));
