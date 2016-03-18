@@ -1,0 +1,21 @@
+{
+  "name": "Pin",
+  "authors": [
+    "gete@xiaokakeji.com"
+  ],
+  "description": "页面向下滚动的时候固定某个元素在顶部",
+  "main": "pin.js",
+  "moduleType": [],
+  "keywords": [
+    "pin"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
