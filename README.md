@@ -1,6 +1,6 @@
 使用说明：
 
-`require('bower_components/pin')`
+`require('bower_components/pin')`或`require('Pin')`
 
 ```
 new Pin('.record-top-banner','.record-head',30, {
