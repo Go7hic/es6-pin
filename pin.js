@@ -245,5 +245,4 @@
   } else {
     this.Pin = Pin;
   }
-  module.exports = this.Pin;
 }(window, document));
