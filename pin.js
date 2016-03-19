@@ -1,4 +1,4 @@
-
+(function (window,document) {
   'use strict'
 
   class Pin {
@@ -242,4 +242,5 @@
   } else {
     this.Pin = Pin;
   }
-  export Pin = 'this.Pin';
+// export default Pin;
+}(window,document))
