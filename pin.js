@@ -1,5 +1,6 @@
-((function(window, document) {
+
   'use strict'
+
   class Pin {
     /**
      * 设置基本的参数，并执行初始化
@@ -241,4 +242,4 @@
   } else {
     this.Pin = Pin;
   }
-})(window, document));
+  export Pin = 'this.Pin';
