@@ -1,24 +1,11 @@
-使用说明：
+## es6-Pin
 
-目前支持 amd/cmd 和 commonjs 几种规范
 
-- amd： `require('bower_components/pin')`
-- commonjs： `require('Pin')`
-- es6： import Pin from 'Pin'
 
-es5 调用
-```
-new Pin('.record-top-banner','.record-head',30, {
-  onPin: function() {
+#### 使用：
 
-  },
-  onUnpin: function() {
+import Pin from './Pin'
 
-  }
-});
-```
-
-es6 调用
 ```
 new Pin('.record-top-banner','.record-head',30, {
   onPin() {
