@@ -4,9 +4,9 @@
 
 #### 使用：
 
-import Pin from './Pin'
 
-```
+```js
+import Pin from './Pin'
 new Pin('.record-top-banner','.record-head',30, {
   onPin() {
   //
