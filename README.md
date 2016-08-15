@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # es6-pin
 页面向下滚动的时候固定某个元素在顶部
 
@@ -8,19 +8,8 @@
 
 ## Usage
 
-```
-import Pin from 'es6-pin'
-=======
-## es6-Pin
-
-
-
-#### 使用：
-
-
 ```js
-import Pin from './Pin'
->>>>>>> 6e96f3299c1a9e2e2a1273e3036bc6bad7adedfc
+import Pin from 'es6-pin'
 new Pin('.record-top-banner','.record-head',30, {
   onPin() {
   //
