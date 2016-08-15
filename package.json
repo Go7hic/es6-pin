@@ -1,0 +1,19 @@
+{
+  "name": "es6-pin",
+  "version": "1.0.0",
+  "description": "使用说明：页面向下滚动的时候固定某个元素在顶部",
+  "main": "pin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyygtfx/es6-pin.git"
+  },
+  "author": "Go7hic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dyygtfx/es6-pin/issues"
+  },
+  "homepage": "https://github.com/dyygtfx/es6-pin#readme"
+}

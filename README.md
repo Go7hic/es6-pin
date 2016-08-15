@@ -1,25 +1,14 @@
-使用说明：
+# es6-pin
+页面向下滚动的时候固定某个元素在顶部
 
-目前支持 amd/cmd 和 commonjs 几种规范
+## Install
+`npm install es6-pin --save`
 
-- amd： `require('bower_components/pin')`
-- commonjs： `require('Pin')`
-- es6： import Pin from 'Pin'
 
-es5 调用
+## Usage
+
 ```
-new Pin('.record-top-banner','.record-head',30, {
-  onPin: function() {
-
-  },
-  onUnpin: function() {
-
-  }
-});
-```
-
-es6 调用
-```
+import Pin from 'es6-pin'
 new Pin('.record-top-banner','.record-head',30, {
   onPin() {
   //
@@ -29,6 +18,7 @@ new Pin('.record-top-banner','.record-head',30, {
   }
 });
 ```
+## 方法说明
 
 - `.record-top-banner` 表示你需要固定在顶部的元素（必填）
 - `.record-head` 表示当滚动超过这个元素的时候开始固定（可选,不填则是0）

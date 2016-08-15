@@ -1,4 +1,4 @@
-(function (window,document) {
+;(function (window,document) {
   'use strict'
 
   class Pin {
@@ -235,12 +235,12 @@
   if (typeof Document !== 'undefined') {
     document.addEventListener('DOMContentLoaded', Pin.init);
   }
-  if (typeof module !== 'undefined' && typeof exports === 'object') {
-    module.exports = Pin;
-  } else if (typeof define === 'function' && (define.amd || define.cmd)) {
-    define(() => Pin);
-  } else {
-    this.Pin = Pin;
-  }
-// export default Pin;
+  // if (typeof module !== 'undefined' && typeof exports === 'object') {
+  //   module.exports = Pin;
+  // } else if (typeof define === 'function' && (define.amd || define.cmd)) {
+  //   define(() => Pin);
+  // } else {
+  //   this.Pin = Pin;
+  // }
+  export default Pin;
 }(window,document))
