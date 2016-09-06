@@ -1,38 +1,4 @@
-<<<<<<< HEAD
 ;(function (window,document) {
-  'use strict'
-
-  class Pin {
-    /**
-     * 设置基本的参数，并执行初始化
-     * @param {String} el     需要固定的元素，必填
-     * @param {String} othel   当滚动超过这个个元素的时候开始固定，可选
-     * @param {Number} aHeight 自定义滚动高差，可选
-     * @param {[type]} options [description]
-     */
-    constructor(el, othel, aHeight, options) {
-      this.el = (typeof el === 'string') ? document.querySelector(el) : el;
-      this.othel = (typeof othel === 'string') ? document.querySelector(othel) : othel;
-      this.aHeight = aHeight || 0;
-      this.parent = this.el.parentNode;
-
-      this.setOptions(options || {});
-
-      this.init();
-    }
-
-    setOptions(options) {
-      this.options = {
-        onPin: (options.onPin !== undefined) ? options.onPin : Pin.noop,
-        onUnpin: (options.onUnpin !== undefined) ? options.onUnpin : Pin.noop,
-        onTouchBottom: (options.onTouchBottom !== undefined) ? options.onTouchBottom : Pin.noop,
-        stopOnBottom: (options.stopOnBottom !== undefined) ? options.stopOnBottom : true,
-        respectWindow: (options.respectWindow !== undefined) ? options.respectWindow : true
-      };
-    }
-=======
->>>>>>> 6e96f3299c1a9e2e2a1273e3036bc6bad7adedfc
-
 'use strict'
 
 class Pin {
