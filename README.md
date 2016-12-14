@@ -11,10 +11,10 @@
 ```js
 import Pin from 'es6-pin'
 new Pin('.record-top-banner','.record-head',30, {
-  onPin() {
+  onPin: () => {
   //
   },
-  onUnpin() {
+  onUnpin: () => {
   //
   }
 });
