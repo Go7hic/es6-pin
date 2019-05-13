@@ -1,5 +1,8 @@
 
 # es6-pin
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/dyygtfx/es6-pin.svg)](https://greenkeeper.io/)
+
 页面向下滚动的时候固定某个元素在顶部
 
 ## Install
